@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  padding: 0; }
+
+#game-main {
+  background: #AA6C71; }
+
+#fps {
+  width: 70px;
+  height: 50px;
+  color: red;
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 30px;
+  text-align: center;
+  line-height: 48px;
+  -webkit-user-select: none; }
+
+#start-screen {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 700px;
+  height: 490px;
+  background: #BEDBAB;
+  z-index: -1; }
+  #start-screen.top {
+    z-index: 1; }
+
+#score-board {
+  width: 700px;
+  height: 80px;
+  background: #F08741;
+  padding: 5px 0;
+  position: relative; }
+
+.life {
+  width: 50px;
+  height: 63px;
+  background: url("../images/balloon-icon.png");
+  display: inline-block; }
+  .life.cross {
+    background-position: 50px 0; }
+
+#score {
+  height: 40px;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 20px;
+  font-size: 45px; }
+  #score::before {
+    content: 'score: '; }
+
+#start-button {
+  background-image: -webkit-linear-gradient(whitesmoke, #e5e5e5);
+  background-repeat: repeat-x;
+  background-color: #E5E5E5;
+  border-color: #4A993E;
+  padding: 9px;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.4;
+  border-radius: 5px;
+  border: 1px solid #DDD;
+  border-bottom-color: #BBB;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  color: #666;
+  cursor: pointer; }
+  #start-button:hover {
+    color: #337797;
+    text-decoration: none;
+    background-color: #D8EAF2;
+    background-image: -webkit-linear-gradient(#f0f7fa, #d8eaf2);
+    background-repeat: repeat-x;
+    border-color: #CBE3EE;
+    border-bottom-color: #97C7DD; }
+  #start-button:focus {
+    border-color: #51A7E8;
+    box-shadow: rgba(81, 167, 232, 0.5) 0 0 5px;
+    text-decoration: none; }
+  #start-button.mousedown {
+    color: white;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+    border-color: #2A65A0;
+    border-bottom-color: #0770A0;
+    background-color: #0CA6DD;
+    background-image: -webkit-linear-gradient(#0770a0, #0ca6dd);
+    background-repeat: repeat-x; }
